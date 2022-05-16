@@ -1,0 +1,12 @@
+version: '3'
+services:
+  boxes:
+    image: boxes:1
+    ports:
+      - "50051:50051"
+    container_name: boxes
+    env_file:
+      - conf
+    volumes:
+      - /home/boxes:/home/boxes
+      
